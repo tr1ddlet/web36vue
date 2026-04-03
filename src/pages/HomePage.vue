@@ -71,7 +71,7 @@ const updateSlider = () => {
   images.value.forEach(el => el.isVisible = el.id === currentSlide ? "block" : "none");
 };
 
-const goMemoryGame = () => router.push('/about');   // Memory Game
+const goMemoryGame = () => router.push('/memory-game');   // Memory Game
 const goTurtles = () => router.push('/turtles');    // Turtles
 
 const todos = ref([

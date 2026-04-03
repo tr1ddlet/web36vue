@@ -5,12 +5,12 @@ import AboutTurtles from '#root/pages/AboutTurtles.vue';
 
 const routes = [
   { path: '/', component: HomePage },
-  { path: '/about', component: MemoryGamePage },
+  { path: '/memory-game', component: MemoryGamePage },
   { path: '/turtles', component: AboutTurtles },
 ];
 
 const router = createRouter({
-  history: createWebHashHistory('/web36vue/'), 
+  history: createWebHashHistory(),
   routes,
 });
 
