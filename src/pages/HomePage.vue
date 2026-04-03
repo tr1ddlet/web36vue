@@ -27,8 +27,8 @@
   <h1 @click="counterStore.increment">{{ counterStore.count }}</h1>
 
   <div class="nav-buttons">
-    <button @click="goCreator">Go to Creator</button>
-    <button @click="goPethouse">Go to Pethouse</button>
+  <button @click="goMemoryGame">Memory Game</button>
+  <button @click="goTurtles">Turtles</button>
   </div>
 </template>
 
@@ -71,8 +71,8 @@ const updateSlider = () => {
   images.value.forEach(el => el.isVisible = el.id === currentSlide ? "block" : "none");
 };
 
-const goCreator = () => router.push('/creator');
-const goPethouse = () => router.push('/pethouse');
+const goMemoryGame = () => router.push('/about');   // Memory Game
+const goTurtles = () => router.push('/turtles');    // Turtles
 
 const todos = ref([
   { text: "анжуманя делат" },
